@@ -1,0 +1,44 @@
+/* V3.3: keep the choice and its visual feedback together on a phone. */
+.service-explorer{display:contents}
+@media(min-width:761px){
+ .arrival-copy{grid-column:1;grid-row:1}
+ .light-table{grid-column:2;grid-row:1}
+ .pause-navigation{grid-column:1/-1;grid-row:2}
+ .pause-explanation{grid-column:1/-1;grid-row:3}
+}
+@media(max-width:760px){
+ .arrival-composition{display:block;min-height:0;margin-top:20px}
+ .arrival-copy{display:block;padding-top:0}
+ .arrival-copy>.eyebrow{font-size:8px;margin-bottom:14px}
+ .arrival-copy h1{font-size:clamp(60px,20vw,82px);line-height:.84;margin-left:-3px}
+ .arrival-copy h1>span{display:block}
+ .arrival-copy h1>span:first-child:after{content:none}
+ .arrival-hand{font-size:42px;margin:-9px 0 18px auto}
+ .arrival-description{font-size:13px;line-height:1.7;max-width:380px;margin:0 0 20px}
+ .arrival-copy>.btn{display:inline-flex;min-height:50px;padding:12px 16px;gap:20px;font-size:11px;vertical-align:middle}
+ .arrival-phone{margin:0 0 0 12px;min-height:44px;font-size:10px;vertical-align:middle}
+ .service-explorer{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;margin-top:28px;padding:12px;background:var(--paper);border:1px solid var(--line);border-radius:24px;min-width:0}
+ .pause-navigation{display:contents}
+ .pause-nav-label{display:none}
+ .pause-buttons{grid-row:1;gap:4px;background:var(--sage);padding:4px;border-radius:999px}
+ .pause-buttons>button{font-family:Quicksand,Arial,sans-serif;font-size:11px;font-weight:700;min-height:44px;line-height:1.4;padding:7px 4px;border-radius:999px;gap:0}
+ .pause-buttons>button small,.pause-buttons>button>span{display:none}
+ .light-table{grid-row:2;display:block;position:relative;min-height:0;height:auto;width:100%;margin:0;overflow:clip}
+ .light-disc,.light-measure,.fan-note{display:none}
+ .leaf-fan{position:relative;inset:auto;height:clamp(132px,24svh,176px);overflow:hidden;perspective:none;border-radius:16px}
+ [data-light-table][data-current-pause] .light-leaf{left:0;top:0;bottom:auto;width:100%;height:100%;margin:0;border:0;border-radius:16px;box-shadow:none;transform:none;transform-origin:center;visibility:hidden;pointer-events:none;will-change:auto}
+ [data-light-table][data-current-pause=touch] .leaf-touch,[data-light-table][data-current-pause=scent] .leaf-scent,[data-light-table][data-current-pause=stillness] .leaf-stillness{visibility:visible}
+ .light-leaf img{object-fit:cover;object-position:50% 55%;filter:saturate(.85)}
+ .light-leaf figcaption{display:none}
+ .fan-disclosure{top:auto;bottom:9px;right:9px;font-size:7px;line-height:1.4;padding:4px 7px;border-radius:5px}
+ .fan-caption{position:relative;inset:auto;display:block;min-height:34px;padding:10px 2px 0;background:var(--paper)}
+ .fan-caption>span{display:none}
+ .fan-caption strong{display:block;font-size:21px;line-height:1.15;letter-spacing:-.025em}
+ .pause-explanation{grid-row:3;min-height:40px;margin:0 2px;font-size:11px;line-height:1.7}
+ .pause-destination{grid-row:4;grid-column:1;justify-self:stretch;min-width:0;min-height:44px;margin:0;padding:10px 2px 4px;font-size:11px}
+}
+@media(max-width:760px) and (max-height:480px){
+ .leaf-fan{height:110px}
+ .fan-caption{min-height:29px;padding-top:7px}
+ .fan-caption strong{font-size:18px}
+}
