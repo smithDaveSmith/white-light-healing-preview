@@ -1,8 +1,8 @@
 (() => {
   'use strict';
   const query = new URLSearchParams(location.search);
-  if (location.pathname === '/' && query.get('post_type') === 'post') { location.replace('/journal/'); return; }
-  const legacy = {'/what-is-reflexology/':'/reflexology/','/new-page-template/':'/','/services/foot-reflexology/':'/reflexology/#foot-reflexology','/2026/04/14/example-blog-post-for-reflexology/':'/2026/05/29/your-first-reflexology-treatment/','/blog/':'/journal/','/privacy-policy/':'/privacy/','/home/':'/'};
+  if (location.pathname === '/white-light-healing-preview/' && query.get('post_type') === 'post') { location.replace('/white-light-healing-preview/journal/'); return; }
+  const legacy = {'/white-light-healing-preview/what-is-reflexology/':'/white-light-healing-preview/reflexology/','/white-light-healing-preview/new-page-template/':'/white-light-healing-preview/','/white-light-healing-preview/services/foot-reflexology/':'/white-light-healing-preview/reflexology/#foot-reflexology','/white-light-healing-preview/2026/04/14/example-blog-post-for-reflexology/':'/white-light-healing-preview/2026/05/29/your-first-reflexology-treatment/','/white-light-healing-preview/blog/':'/white-light-healing-preview/journal/','/white-light-healing-preview/privacy-policy/':'/white-light-healing-preview/privacy/','/white-light-healing-preview/home/':'/white-light-healing-preview/'};
   if (legacy[location.pathname]) { location.replace(legacy[location.pathname]); return; }
   document.querySelectorAll('.mobile-menu').forEach(menu => menu.addEventListener('keydown', event => {
     if (event.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }

@@ -5,9 +5,9 @@
   const root=document.documentElement,storageKey='wlh-arrival-v3';
   const ready=document.readyState==='loading'?new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true})):Promise.resolve();
   const modes={
-    touch:{number:'01 / TOUCH',name:'A pause, from the ground up.',copy:'Foot, facial, maternity and family reflexology, tailored with Caroline.',link:'/reflexology/',label:'Explore reflexology'},
-    scent:{number:'02 / SCENT',name:'A small ritual to take home.',copy:'Personal aromatherapy blends, rollerballs and aroma sticks to take home.',link:'/aromatherapy/',label:'Explore aromatherapy'},
-    stillness:{number:'03 / STILLNESS',name:'A little room, just to be.',copy:'Reiki, head massage and combinations. Discuss the right session with Caroline.',link:'/holistic-therapies/',label:'Explore holistic care'}
+    touch:{number:'01 / TOUCH',name:'A pause, from the ground up.',copy:'Foot, facial, maternity and family reflexology, tailored with Caroline.',link:'/white-light-healing-preview/reflexology/',label:'Explore reflexology'},
+    scent:{number:'02 / SCENT',name:'A small ritual to take home.',copy:'Personal aromatherapy blends, rollerballs and aroma sticks to take home.',link:'/white-light-healing-preview/aromatherapy/',label:'Explore aromatherapy'},
+    stillness:{number:'03 / STILLNESS',name:'A little room, just to be.',copy:'Reiki, head massage and combinations. Discuss the right session with Caroline.',link:'/white-light-healing-preview/holistic-therapies/',label:'Explore holistic care'}
   };
   let visualChoice=null,visualTime=null,openAgain=null,closeNow=null;
   let activeChoice='touch';

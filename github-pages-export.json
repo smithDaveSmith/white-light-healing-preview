@@ -1,0 +1,39 @@
+{
+  "repository": "white-light-healing-preview",
+  "origin": "https://smithdavesmith.github.io",
+  "base": "/white-light-healing-preview/",
+  "url": "https://smithdavesmith.github.io/white-light-healing-preview/",
+  "application_scripts": [
+    "assets/site.js",
+    "assets/arrival.js"
+  ],
+  "rewritten_files": [
+    "2026/04/14/example-blog-post-for-reflexology/index.html",
+    "2026/05/29/your-first-reflexology-treatment/index.html",
+    "404/index.html",
+    "404.html",
+    "about/index.html",
+    "aromatherapy/index.html",
+    "assets/arrival.js",
+    "assets/site.js",
+    "blog/index.html",
+    "contact/index.html",
+    "corporate/index.html",
+    "holistic-therapies/index.html",
+    "home/index.html",
+    "index.html",
+    "journal/index.html",
+    "location-fees/index.html",
+    "new-page-template/index.html",
+    "preview-notes/index.html",
+    "privacy/index.html",
+    "privacy-policy/index.html",
+    "reflexology/index.html",
+    "routes.json",
+    "services/foot-reflexology/index.html",
+    "training/index.html",
+    "what-is-reflexology/index.html"
+  ],
+  "copied_files": 28,
+  "deleted_files": 0
+}
