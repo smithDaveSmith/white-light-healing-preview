@@ -32,3 +32,21 @@ Final focused results are recorded separately after the corrected measurement. W
 This is a Chromium lab check, not real-user data, a full WCAG certification or native Safari/iPhone/Android testing. Reduced motion is simulated; no-JS uses a script-disabled sandbox. No real booking, payment or email was submitted. The contact form remains a mailto draft. _headers and _redirects are host-specific source files and are not GitHub Pages server configuration; the retained legacy HTML/JavaScript paths are independently tested. Noindex HTML is retained. The project-level robots.txt does not control the account-root robots.txt.
 
 See GITHUB-PAGES-GUIDE.md for the complete zero-to-publish and update process.
+
+
+## Final focused result
+
+The corrected focused run on f50fa6906e52cbde3a04955a2a3247f58e316e90 passes 41/41 homepage functional records, 51/51 mobile selections, all five viewport renders, and the reduced/no-JS branches. Application bytes are unchanged from repair 1be6df7. The focused record sequence matches the 41 homepage records in the full run. Combining that corrected homepage measurement with the other 40 passing full-run records verifies 81/81 functional records across the two runs. This is an explicit cross-run reconciliation, not a claim that the earlier raw full run had zero measurement warnings. The raw reports and exact source references are retained in tools/.
+
+## Decisions I made for you
+
+| Decision | Basis |
+|---|---|
+| Keep the existing repository, public audience and main/root publishing | The supplied repository already contains every website file, and its built-in Pages deployment succeeds |
+| Repair URL bases rather than move or delete website files | All 53 uploaded files match V3.3; measured failures point outside the repository prefix |
+| Preserve the approved logo, mobile UX and all visual assets | Earlier user instructions; file hashes establish that the design assets need no replacement |
+| Add .nojekyll and retain branch deployment | The output is prebuilt static HTML; GitHub documents branch publishing and opting out of Jekyll |
+| Add a limited static exporter and document framework exceptions | This project needs an explicit repository base; arbitrary bundled applications need their own supported build configuration |
+| Recommend GitHub Desktop for larger uploads | GitHub's documented browser upload limit is 100 files per upload |
+| Keep all earlier test observations and correct sampling order | Modal activation is synchronous; the source queues its inert lock. Tests must measure the intended rendered state |
+| Keep noindex and all real external contact/booking targets | This is an unofficial preview; hosting repair does not authorise changes to the business's operational systems |
