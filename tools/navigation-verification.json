@@ -1,0 +1,34 @@
+[
+  {
+    "test": "Service choice link → aromatherapy",
+    "passed": true
+  },
+  {
+    "test": "Reload aromatherapy directly",
+    "passed": true
+  },
+  {
+    "test": "Navigate to contact",
+    "passed": true
+  },
+  {
+    "from": "what-is-reflexology/",
+    "to": "https://smithdavesmith.github.io/white-light-healing-preview/reflexology/",
+    "passed": true
+  },
+  {
+    "from": "services/foot-reflexology/",
+    "to": "https://smithdavesmith.github.io/white-light-healing-preview/reflexology/#foot-reflexology",
+    "passed": true
+  },
+  {
+    "from": "blog/",
+    "to": "https://smithdavesmith.github.io/white-light-healing-preview/journal/",
+    "passed": true
+  },
+  {
+    "from": "?post_type=post",
+    "to": "https://smithdavesmith.github.io/white-light-healing-preview/journal/",
+    "passed": true
+  }
+]
